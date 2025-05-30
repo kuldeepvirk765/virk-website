@@ -2,117 +2,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Virk Epoxy and Landscaping Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-    }
-    header {
-      background: linear-gradient(to right, #0077cc, #00cc88);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      width: 80px;
-      height: auto;
-    }
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #0077cc;
-    }
-    .images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .images img {
-      width: 48%;
-      border-radius: 8px;
-    }
-    .contact, .buttons {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      color: white;
-      background: #25d366;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .buttons a.call {
-      background: #007bff;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    form button {
-      padding: 10px 20px;
-      background: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virk Epoxy and Landscaping Solutions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #004d40, #26a69a);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img.logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #004d40;
+        }
+        .contact-form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background: #004d40;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-buttons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #25d366;
+            display: inline-block;
+        }
+        .contact-buttons a.call {
+            background-color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Virk Logo" class="logo">
+        <h1>Virk Epoxy and Landscaping Solutions</h1>
+        <p>Quality you can stand on.</p>
+    </header>
 
-<header>
-  <img src="logo.png" alt="Virk Logo"/>
-  <h1>Virk Epoxy and Landscaping Solutions</h1>
-  <p>📞 0482 380 221 | ✉️ virkepoxy@gmail.com</p>
-</header>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>Epoxy Flooring:</strong> Flake system, metallic, plain colour, high gloss, non-slip, custom design</li>
+            <li><strong>Landscaping:</strong> Decking, fencing, artificial grass, front and back yard solutions</li>
+        </ul>
+    </section>
 
-<section>
-  <h2>Epoxy Flooring</h2>
-  <div class="images">
-    <img src="images/epoxy1.jpg" alt="Epoxy Floor 1"/>
-    <img src="images/epoxy2.jpg" alt="Epoxy Floor 2"/>
-    <img src="images/epoxy3.jpg" alt="Epoxy Floor 3"/>
-    <img src="images/epoxy4.jpg" alt="Epoxy Floor 4"/>
-  </div>
-</section>
-
-<section>
-  <h2>Landscaping Services</h2>
-  <ul>
-    <li>Decking</li>
-    <li>Fencing</li>
-    <li>Artificial Grass</li>
-    <li>Front and Back Yard</li>
-  </ul>
-</section>
-
-<section class="buttons">
-  <a href="https://wa.me/61482380221" target="_blank">💬 WhatsApp</a>
-  <a href="tel:0482380221" class="call">📞 Call</a>
-</section>
-
-<section class="contact">
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
-
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-buttons">
+            <a class="call" href="tel:0482380221">📞 Call Us</a>
+            <a href="https://wa.me/61482380221">💬 WhatsApp</a>
+        </div>
+    </section>
 </body>
 </html>
